@@ -7,9 +7,12 @@
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j;
-	int tmp, min_idx;
+	int tmp = 0, min_idx = 0;
 
-	for (i = 0; i < size - 1; i++)
+	if (!array || size < 2)
+		return;
+	
+	for (i = 0; i <= size - 1; i++)
 	{
 		min_idx = i;
 		for (j = i + 1; j < size; j++)
