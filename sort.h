@@ -29,4 +29,6 @@ void quick_sort(int *array, size_t size);
 
 void quickSort(int arr[], int low, int high, size_t size);
 int partition(int arr[], int low, int high, size_t size);
+
+void shell_sort(int *array, size_t size);
 #endif
