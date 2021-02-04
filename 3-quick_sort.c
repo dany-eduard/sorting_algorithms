@@ -40,9 +40,11 @@ int partition(int arr[], int low, int high, size_t size)
  */
 void quickSort(int arr[], int low, int high, size_t size)
 {
+	int pi;
+
 	if (low < high)
 	{
-		int pi = partition(arr, low, high, size);
+		pi = partition(arr, low, high, size);
 
 		quickSort(arr, low, pi - 1, size);
 		quickSort(arr, pi + 1, high, size);
@@ -55,7 +57,6 @@ void quickSort(int arr[], int low, int high, size_t size)
  */
 void quick_sort(int *array, size_t size)
 {
-
 	if (!array || !size)
 		return;
 	quickSort(array, 0, size, size);
